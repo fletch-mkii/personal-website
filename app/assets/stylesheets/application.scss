@@ -16,18 +16,16 @@
 
  */
 
-body {
+* {
    font-family: 'Poiret One';
    font-weight: bold;
  }
 
-h1 {
-  font-family: 'Poiret One';
-  font-weight: bold;
-}
-
 .bg-row {
   background: linear-gradient(#8478a5, white);
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .header {

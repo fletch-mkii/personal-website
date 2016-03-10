@@ -1,37 +1,54 @@
-<div class="row">
-  <div class="text-center small-12 columns">
-    <h1>Mark Fletcher</h1>
+<div class="row header">
+  <div class="row">
+    <div class="text-center small-12 columns">
+      <h1>Mark Fletcher</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="text-center large-12 columns contact-info">
+      <p id="contact">
+        <a href="mailto:mook.fletcher@gmail.com">mook.fletcher@gmail.com</a> ◆
+        <a href="http://www.linkedin.com/in/mkfletch">linkedin.com/in/mkfletch</a> ◆
+        <a href="http://www.github.com/fletch-mkii">github.com/fletch-mkii</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="row linkrow">
+    <div class="infolink text-center medium-3 columns" id="education">
+      Education
+    </div>
+    <div class="infolink text-center medium-3 columns" id="experience">
+      Experience
+    </div>
+    <div class="infolink text-center medium-3 columns" id="projects">
+      Projects
+    </div>
+    <div class="infolink text-center medium-3 columns" id="interests">
+      Interests
+    </div>
   </div>
 </div>
 
-<div class="row">
-  <div class="text-center large-12 columns contact-info">
-    <p id="contact">
-      mook.fletcher@gmail.com ◆ linkedin.com/in/mkfletch ◆ github.com/fletch-mkii
-    </p>
+<div class="partial-container">
+  <div class="row partial-selector bio">
+    <%= render "layouts/main" %>
   </div>
-</div>
 
-<div class="row linkrow">
-  <div class="infolink text-center medium-4 columns">
-    <%= link_to "Education", new_home_path %>
+  <div class="row partial-selector education info">
+    <%= render "layouts/education" %>
   </div>
-  <div class="infolink text-center medium-4 columns">
-    <%= link_to "Skills", new_home_path %>
-  </div>
-  <div class="infolink text-center medium-4 columns end">
-    <%= link_to "Interests", new_home_path %>
-  </div>
-</div>
 
-<div class="row">
-  <div class="small-10 columns small-offset-1 bio">
-    <p>
-    <%paragrapherino = ""%>
-    <%200.times do%>
-      <% paragrapherino += "para graph erino "%>
-    <%end%>
-    <%=paragrapherino[0..-2]%>
-    </p>
+  <div class="row partial-selector experience info">
+    <%= render "layouts/experience" %>
+  </div>
+
+  <div class="row partial-selector projects info">
+    <%= render "layouts/projects" %>
+  </div>
+
+  <div class="row partial-selector interests info">
+    <%= render "layouts/interests" %>
   </div>
 </div>

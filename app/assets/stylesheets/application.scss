@@ -15,3 +15,29 @@
  *= require foundation_and_overrides
 
  */
+
+body {
+   font-family: 'Poiret One';
+   font-weight: bold;
+ }
+
+h1 {
+  font-family: 'Poiret One';
+  font-weight: bold;
+}
+
+.bg-row {
+  background: linear-gradient(#8478a5, white);
+}
+
+.header {
+  padding: 2rem;
+}
+
+a {
+  color: black;
+
+  &:hover {
+    color: gray;
+  }
+}
